@@ -1,13 +1,11 @@
 import React from 'react';
+import './tile.scss';
 
-const Tile = ({tile: {title, description}}) => {
+const Tile = ({tile: {title}}) => {
     return (
-        <div>
-            <span>
+        <div className="tile">
+            <span className="tile__title">
                 {title}
-            </span>
-            <span>
-                {description}
             </span>
         </div>
     )
